@@ -1,0 +1,13 @@
+{
+  "name": "Github PR tree - Single file view",
+  "description": "Displays only a single file diff in the main view of the pull request tree instead of all the files.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/pull/*/files"],
+      "run_at": "document_end",
+      "js": ["script.js"]
+    }
+  ]
+}
